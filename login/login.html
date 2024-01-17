@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../login/main.css">
+    <title>Tela de login</title>
+</head>
+<body>
+    <main id="login">
+        <!-- Icone e titulo da tela -->
+        <div id="iocn"> 
+            <i class='bx bx-log-in-circle bx-flip-vertical' ></i>
+            <span>Login</span>
+        </div>
+        <!-- Formulario -->
+        <form id="login-form">
+            <!-- Inserir o usuario -->
+            <div class="form-input">
+                <i class='bx bx-user'></i>
+                <input type="text" placeholder="Insira seu usuario" name="" id="">
+            </div>
+            <!-- Inserir a senha -->
+            <div class="form-input" id="password">
+                <i class='bx bx-lock-alt'></i>
+                <input type="password" placeholder="Insira sua senha" name="" id="psw" >
+                <span toggle="#psw" class='bx bx-low-vision' id="psw-hidden" onclick="showpsw()"></span>
+            </div>
+        </form>
+        <!-- Lembrar de mim -->
+        <div id="remember-me">
+            <input type="checkbox" name="" id="">
+            <p>Lembrar de mim</p>
+        </div>
+        <!-- botão para enviar form -->
+        <button type="submit">clique aqui</button>
+        <!-- Direcionar para a pagina de registre-se -->
+        <div id="register-content">
+            <span id="link-register"><a href="../register/register.html">Registre-se</a></span>
+        </div>
+        
+    </main>
+    <script src="../login/script.js"></script>
+</body>
+</html>

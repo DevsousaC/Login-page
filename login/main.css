@@ -1,0 +1,136 @@
+/* Reset de estilo geral */
+*{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    letter-spacing: 1px;
+    color: white;
+    font-family: "Cabin", sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:linear-gradient(to bottom, transparent 0%, rgb(0, 0, 0) 100%), url(https://wallpapercave.com/wp/wp9015480.jpg);
+    background-color: black;
+    background-size: cover;
+}
+
+/* área principal */
+main#login{
+    backdrop-filter: sepia(100%);
+    width: 300px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 20px;
+    
+}
+
+/* Estilo do icone e titulo da pagina */
+main#login #iocn{
+    position: fixed;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+main#login #iocn i{
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    color: white;
+}
+main#login #iocn span{
+    align-self: center;
+    font-size: 20px;
+}
+
+/* Formulario */
+main#login form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 20%;
+}
+
+/* Estilo geral dos input */
+main#login form .form-input {
+    border-bottom: 1px solid white;
+    width: 75%;
+}
+
+main#login form .form-input input{
+    width: 70%;
+    height: 30px;
+    background-color: transparent;
+}
+
+/* Estilo das senhas */
+main#login form #password{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+main#login form #password input{
+    width: 100%;
+}
+main#login form #password #psw-hidden{
+    cursor: pointer;
+}
+
+/* Estilo do lembre-se de mim */
+main#login  #remember-me{
+    height: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+main#login #remember-me i{
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+/* Estilo do botão */
+main#login button{
+    cursor: pointer;
+    background-color: white;
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    color: black;
+    font-weight: 600;
+    margin-top: 10px;
+}
+main#login button:hover{
+   opacity: 80%;
+}
+
+/* Estilo da área que direciona para registrar-se */
+main#login #register-content{
+    position: fixed;
+    bottom: 20px;
+    height: 22px;
+    width: 95px;
+    border-radius: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(100%);
+    display: flex;
+    align-content: center;
+}
+main#login #register-content span, a{
+    color: white;
+    font-weight: 700;
+}

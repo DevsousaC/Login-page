@@ -1,0 +1,137 @@
+/* Reset de estilo geral */
+*{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    letter-spacing: 1px;
+    font-family: "Cabin", sans-serif;
+}
+/* Corpo do html */
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:linear-gradient(to bottom, transparent 0%, rgb(0, 0, 0) 100%), url(https://wallpapercave.com/wp/wp9015480.jpg);
+    background-size: cover;
+}
+
+/* área principal */
+main#register{
+    backdrop-filter: sepia(100%);
+    width: 300px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 20px;
+    
+}
+
+/* Estilo do icone e titulo da pagina */
+main#register #iocn{
+    position: fixed;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main#register #iocn i{
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    color: white;
+}
+main#register #iocn h1{
+    align-self: center;
+    font-size: 20px;
+    color: white;
+}
+
+/* Estilo do formulario */
+main#register form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 20%;
+    color: white;
+}
+
+/* Estilo geral dos input */
+main#register form .form-input {
+    border-bottom: 1px solid white;
+    width: 75%;
+    color: white;
+}
+main#register form .form-input input{
+    width: 70%;
+    height: 30px;
+    background-color: transparent;
+    color: white;
+}
+
+/* Estilo da div de email invalido */
+main#register form div.hiddendiv{
+    display: none;
+}
+main#register form div.incorrect{
+    display: block;
+    color: red;
+    height: 12px;
+    font-size: 10px;
+}
+
+/* Estilo das senhas */
+main#register form #password{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+main#register form #password input{
+    width: 100%;
+}
+main#register form #password span.psw-hidden{
+    cursor: pointer;
+}
+
+/* Estilo do botão */
+main#register button{
+    cursor: pointer;
+    background-color: white;
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    color: black;
+    font-weight: 600;
+    margin-top: 10px;
+
+}
+main#register button:hover{
+   opacity: 80%;
+}
+
+/* Estilo da área que direciona para o login */
+main#register #login-content{
+    position: fixed;
+    bottom: 20px;
+    height: 22px;
+    width: 95px;
+    border-radius: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(100%);
+    display: flex;
+    align-content: center;
+}
+main#register #login-content span, a{
+    font-weight: 700;
+    color: white;
+}
